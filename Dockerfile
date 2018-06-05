@@ -14,4 +14,7 @@ RUN chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 # Install .NET Core SDK
 RUN apt-get update
-RUN apt-get install -y dotnet-sdk-2.1.3
+RUN apt-get install -y dotnet-sdk-2.1
+
+# Display Greeting
+CMD [ "echo", "Ubuntu 18.04 LTS with .NET Core 2.1"] 
